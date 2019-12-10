@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: TenkeySeven's new blog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: TenkeySeven
 language: en
 timezone: ''
 
@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: nexT
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
