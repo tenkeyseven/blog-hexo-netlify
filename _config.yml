@@ -96,3 +96,10 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+# Data-file type setting for theme
+# the initial purpose was to solve the issue of the building failure of netlify. 
+
+theme_config:
+    # Schemes
+    scheme: Pisces
