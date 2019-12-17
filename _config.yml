@@ -101,8 +101,8 @@ leancloud_counter_security:
   enable_sync: true
   app_id: y7z22bBQFQujXDUk6yQ1lg6a-gzGzoHsz
   app_key: VO3xcEbb8CQlAj7kdMxkz7X0
-  username: <<your username>> # Will be asked while deploying if is left blank
-  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
+  username: tenkey # Will be asked while deploying if is left blank
+  password: tenkey0506 # Recommmended to be left blank. Will be asked while deploying if is left blank
 
 # Data-file type setting for theme
 # the initial purpose was to solve the issue of the building failure of netlify. 
@@ -294,6 +294,6 @@ theme_config:
         # If you don't care about security in leancloud counter and just want to use it directly
         # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
         security: true
-        betterPerformance: false
+        betterPerformance: true
 
 
