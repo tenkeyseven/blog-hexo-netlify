@@ -63,7 +63,7 @@
     return (t > height || t < 0) ? line(p) : t;
   }
 
-  document.onclick = redraw;
+  // document.onclick = redraw;
   document.ontouchstart = redraw;
   redraw();
 }();
