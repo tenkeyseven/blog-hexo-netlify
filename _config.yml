@@ -281,19 +281,97 @@ theme_config:
         gongan_num:
         # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
         gongan_icon_url:
+    
+    # ---------------------------------------------------------------
+    # Animation Settings
+    # ---------------------------------------------------------------
 
-      # Show number of visitors of each article.
-      # You can visit https://leancloud.cn to get AppID and AppKey.
-      # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
-      # Do not enable both `valine.visitor` and `leancloud_visitors`.
-      leancloud_visitors:
-        enable: true
-        app_id: y7z22bBQFQujXDUk6yQ1lg6a-gzGzoHsz
-        app_key: VO3xcEbb8CQlAj7kdMxkz7X0
-        # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-        # If you don't care about security in leancloud counter and just want to use it directly
-        # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-        security: true
-        betterPerformance: true
+    # Use velocity to animate everything.
+    # For more information: http://velocityjs.org
+    motion:
+      enable: true
+      async: false
+      transition:
+        # Transition variants:
+        # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
+        # swoopIn | whirlIn | shrinkIn | expandIn
+        # bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn
+        # slideUpIn | slideDownIn | slideLeftIn | slideRightIn
+        # slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn
+        # perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn
+        post_block: fadeIn
+        post_header: slideDownIn
+        post_body: slideDownIn
+        coll_header: slideLeftIn
+        # Only for Pisces | Gemini.
+        sidebar: slideUpIn
 
+    # Progress bar in the top during page loading.
+    # Dependencies: https://github.com/theme-next/theme-next-pace
+    # For more information: https://github.com/HubSpot/pace
+    pace:
+      enable: true
+      # Themes list:
+      # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+      # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+      theme: loading-bar
+
+    # JavaScript 3D library.
+    # Dependencies: https://github.com/theme-next/theme-next-three
+    three:
+      enable: false
+      three_waves: false
+      canvas_lines: false
+      canvas_sphere: false
+
+    # Canvas-nest
+    # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
+    # For more information: https://github.com/hustcc/canvas-nest.js
+    canvas_nest:
+      enable: false
+      onmobile: true # Display on mobile or not
+      color: "0,0,255" # RGB values, use `,` to separate
+      opacity: 0.5 # The opacity of line: 0~1
+      zIndex: -1 # z-index property of the background
+      count: 99 # The number of lines
+
+    # Canvas-ribbon
+    # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
+    # For more information: https://github.com/zproo/canvas-ribbon
+    canvas_ribbon:
+      enable: false
+      size: 300 # The width of the ribbon
+      alpha: 0.6 # The transparency of the ribbon
+      zIndex: -1 # The display level of the ribbon
+      
+    back2top:
+      enable: true
+      # Back to top in sidebar.
+      sidebar: true
+      # Scroll percent label in b2t button.
+      scrollpercent: true
+
+    # Reading progress bar
+    reading_progress:
+      enable: false
+      # Available values: top | bottom
+      position: top
+      color: "#37c6c0"
+      height: 3px
+
+    # Bookmark Support
+    bookmark:
+      enable: true
+      # Customize the color of the bookmark.
+      color: "#222"
+      # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+      # If manual, only save it by clicking the bookmark-icon.
+      save: auto
+
+    # `Follow me on GitHub` banner in the top-right corner.
+    github_banner:
+      enable: true
+      permalink: https://github.com/tenkeyseven
+      title: Follow me on GitHub  
+      
 
