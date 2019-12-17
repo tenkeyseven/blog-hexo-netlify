@@ -19,3 +19,5 @@ source/lib/font-awesome/scss/
 !source/lib/velocity/
 
 !source/lib/canvas-ribbon
+
+!source/lib/pace
