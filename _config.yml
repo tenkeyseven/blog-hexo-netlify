@@ -97,6 +97,13 @@ theme: next-theme
 deploy:
   type: ''
 
+leancloud_counter_security:
+  enable_sync: true
+  app_id: <<your app id>>
+  app_key: <<your app key>>
+  username: <<your username>> # Will be asked while deploying if is left blank
+  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
+
 # Data-file type setting for theme
 # the initial purpose was to solve the issue of the building failure of netlify. 
 
@@ -221,3 +228,58 @@ theme_config:
       #service: tidio
       icon: comment # Icon name in Font Awesome, set false to disable icon.
       text: Chat # Button text, change it as you wish.
+
+    # ---------------------------------------------------------------
+    # Site Information Settings
+    # See: https://theme-next.org/docs/getting-started/
+    # ---------------------------------------------------------------
+
+    favicon:
+      small: /images/favicon-16x16-next.png
+      medium: /images/favicon-32x32-next.png
+      apple_touch_icon: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
+      safari_pinned_tab: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
+      #android_manifest: /images/manifest.json
+      #ms_browserconfig: /images/browserconfig.xml
+
+    footer:
+      # Specify the date when the site was setup. If not defined, current year will be used.
+      # since:2015
+
+      # Icon between year and copyright info.
+      icon:
+        # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
+        # `heart` is recommended with animation in red (#ff0000).
+        name: heart
+        # If you want to animate the icon, set it to true.
+        animated: true
+        # Change the color of icon, using Hex Code.
+        color: "#ff0000"
+
+      # If not defined, `author` from Hexo `_config.yml` will be used.
+      copyright: maintained by TenkeySeven with love
+
+      powered:
+        # Hexo link (Powered by Hexo).
+        enable: true
+        # Version info of Hexo after Hexo link (vX.X.X).
+        version: true
+
+      theme:
+        # Theme & scheme info link (Theme - NexT.scheme).
+        enable: true
+        # Version info of NexT after scheme info (vX.X.X).
+        version: true
+
+      # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
+      beian:
+        enable: false
+        icp:
+        # The digit in the num of gongan beian.
+        gongan_id:
+        # The full num of gongan beian.
+        gongan_num:
+        # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+        gongan_icon_url:
+
+
