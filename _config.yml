@@ -5,7 +5,7 @@
 # Site
 title: TenkeySeven's new blog
 subtitle: 'TenkeySeven'
-description: 'A man whose name is kik'
+description: 'A man whose name is kiki'
 keywords:
 author: TenkeySeven
 language: en
@@ -99,8 +99,8 @@ deploy:
 
 leancloud_counter_security:
   enable_sync: true
-  app_id: <<your app id>>
-  app_key: <<your app key>>
+  app_id: y7z22bBQFQujXDUk6yQ1lg6a-gzGzoHsz
+  app_key: VO3xcEbb8CQlAj7kdMxkz7X0
   username: <<your username>> # Will be asked while deploying if is left blank
   password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
 
@@ -281,5 +281,19 @@ theme_config:
         gongan_num:
         # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
         gongan_icon_url:
+
+      # Show number of visitors of each article.
+      # You can visit https://leancloud.cn to get AppID and AppKey.
+      # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
+      # Do not enable both `valine.visitor` and `leancloud_visitors`.
+      leancloud_visitors:
+        enable: true
+        app_id: y7z22bBQFQujXDUk6yQ1lg6a-gzGzoHsz
+        app_key: VO3xcEbb8CQlAj7kdMxkz7X0
+        # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+        # If you don't care about security in leancloud counter and just want to use it directly
+        # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
+        security: true
+        betterPerformance: false
 
 
