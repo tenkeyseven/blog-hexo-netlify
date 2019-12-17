@@ -235,8 +235,8 @@ theme_config:
     # ---------------------------------------------------------------
 
     favicon:
-      small: /images/favicon-16x16-next.png
-      medium: /images/favicon-32x32-next.png
+      small: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
+      medium: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
       apple_touch_icon: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
       safari_pinned_tab: https://i.loli.net/2019/11/01/OUd4zagj69hviq7.jpg
       #android_manifest: /images/manifest.json
