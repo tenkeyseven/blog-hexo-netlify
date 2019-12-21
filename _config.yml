@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://serene-spence-9762e6.netlify.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -372,6 +372,16 @@ theme_config:
     github_banner:
       enable: true
       permalink: https://github.com/tenkeyseven
-      title: Follow me on GitHub  
+      title: Follow me on GitHub
+    # Creative Commons 4.0 International License.
+    # See: https://creativecommons.org/share-your-work/licensing-types-examples
+    # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+    # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+    # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+    creative_commons:
+      license: by-nc-sa
+      sidebar: false
+      post: true
+      language:  
       
 
