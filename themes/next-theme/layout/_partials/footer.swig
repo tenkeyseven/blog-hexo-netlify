@@ -79,5 +79,7 @@
 <span id="busuanzi_container_site_pv">
      来到这 <span id="busuanzi_value_site_pv"></span> 次🎉
 </span>
-
+<div>
+<a href="http://www.beian.miit.gov.cn">京 ICP 备 17065315 号</a>
+</div>
 {{- next_inject('footer') }}
